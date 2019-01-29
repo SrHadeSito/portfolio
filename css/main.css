@@ -1,0 +1,1004 @@
+/* RESET */
+	*{
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+	html,body{
+		width: 100%;
+	}
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+	form,fieldset,input,textarea,p,blockquote,th,td {
+		padding: 0;
+		margin: 0;
+	}
+	a{
+		text-decoration:none;
+	}
+	table {
+	    border-spacing: 0;
+	}
+	fieldset,img {
+	    border: 0;
+	}
+	address,caption,cite,code,dfn,em,strong,th,var {
+		font-weight: normal;
+		font-style: normal;
+	}
+	strong{
+		font-weight: bold;
+	}
+	ol,ul {
+		list-style: none;
+		margin:0;
+		padding:0;
+	}
+	caption,th {
+		text-align: left;
+
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: normal;
+		font-size: 100%;
+		margin:0;
+		padding:0;
+	}
+	q:before,q:after {
+		content:'';
+	}
+	abbr,acronym {
+		border: 0;
+	}
+
+/* General */
+	
+	/* Scrollbar */
+		/* Width */
+		::-webkit-scrollbar {
+			display: none;
+			width: 4px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 5px grey; 
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #333;
+		}
+	/* Page */
+		body{
+			background-color: rgb(0, 0, 0);
+		}
+		header{
+			width: 100%;
+		}
+		section{
+			width: 100%;
+		}
+		.sec-title{
+			margin: 0 auto;
+			color: rgb(255, 255, 255);
+			font-size: 4rem;
+			text-align: center;
+		}
+
+/* Navigation Menu */
+	.nav-mobile{
+		display: none;
+	}
+	#navbar .nav-items{
+		position: fixed;
+		z-index: 99999;
+		width: 100%;
+		background-color: rgba(0, 0, 0, .25);
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	#navbar .nav-items li{
+		padding: 0.750em 0.625em;
+	}
+	#navbar .nav-items li a{
+		text-transform: uppercase;
+		font-weight: bold;
+		color: white;
+		padding: 0.750em 0.625em;
+	}
+	#navbar .nav-items .close{
+		display: none;
+	} 
+	#navbar .nav-items li a:hover{
+		background-color: rgba(0, 0, 0, .8);
+	}
+	#navbar .nav-items li.active a{
+		background-color: rgba(0, 0, 0, .75);
+		border-bottom: 0.2em solid rgb(30, 235, 181);
+	}
+	#fp-nav ul li a span{
+		background-color: rgb(255, 255, 255) !important;
+	}
+
+/* Index - Section */
+	#sec-index{
+		background-image: url(../img/desktop_01-large.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: auto;
+		font-family: "Luna", monospace;
+		max-height: 100vh;
+	}
+	#sec-index .index-container{
+		width: 100%;
+		height: 100%;
+		background: rgba(250, 250, 250, .1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#sec-index .index-container .index-content{
+		background: rgba(250, 250, 250, .2);
+		border-radius: 10px;
+		text-align: center;
+		padding: 20px;
+	}
+	#sec-index .index-container .index-title{
+		color: #191919;
+		font-size: 2.5rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	#sec-index .index-container h3{
+		font-size: 1.2rem;
+		margin-bottom: 15px;
+		color: #333;
+	}
+	#sec-index .index-container .social-media{
+		font-size: 2.7rem;
+	}
+	.social-media > a{
+		color: rgba(0, 0, 0, .9);
+	}
+
+/* About Me - Section */
+	#sec-about-us .fp-tableCell{
+		vertical-align: middle;
+		background: #333;
+	}
+	#sec-about-us .about-container{
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		color: white;
+		text-align: center;
+	}
+	#sec-about-us h1{
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 2.4rem;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		font-weight: bold;
+	}
+	#sec-about-us .about-section-row{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 20px;
+	}
+	#sec-about-us .about-section-col{
+		flex: 50%;
+	}
+	#sec-about-us .about{
+		padding-right: 30px;
+		padding-bottom: 20px;
+	}
+	#sec-about-us .about img{
+		max-width: 300px;
+		margin-bottom: 20px;
+	}
+	#sec-about-us .about p{
+		text-align: justify;
+		font-size: 1.3rem;
+		margin-bottom: 20px;
+	}
+	#sec-about-us .about a{
+		font-family: 'Arial';
+		display: inline-block;
+		color: #e74c3c;
+		text-decoration: none;
+		border: 2px solid #e74c3c;
+		border-radius: 24px;
+		padding: 8px 40px;
+		transition: 0.4s linear;
+	}
+	#sec-about-us .about a:hover{
+		color: #fff;
+		background: #e74c3c;
+	}
+	#sec-about-us .skills{
+		padding-left: 20px;
+	}
+	#sec-about-us .skill{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+		#sec-about-us .skill .s1{
+			width: 0%;
+			animation: html 2s linear .2s;
+			animation-play-state: paused;
+		}
+			@keyframes html{
+				0%{width: 0%;}
+				100%{width: 80%;}
+			}
+		#sec-about-us .skill .s2{
+			width: 0%;
+			animation: css 2s linear .6s;
+			animation-play-state: paused;
+		}
+			@keyframes css{
+				0%{width: 0%;}
+				100%{width: 60%;}
+			}
+		#sec-about-us .skill .s3{
+			width: 0%;
+			animation: js 2s linear .9s;
+			animation-play-state: paused;
+		}
+			@keyframes js{
+				0%{width: 0%;}
+				100%{width: 70%;}
+			}
+		#sec-about-us .skill .s4{
+			width: 0%;
+			animation: jquery 2s linear 1.2s;
+			animation-play-state: paused;
+		}
+			@keyframes jquery{
+				0%{width: 0%;}
+				100%{width: 75%;}
+			}
+		#sec-about-us .skill .s5{
+			width: 0%;
+			animation: angular 2s linear 1.5s;
+			animation-play-state: paused;
+		}
+			@keyframes angular{
+				0%{width: 0%;}
+				100%{width: 60%;}
+			}
+		#sec-about-us .skill .s6{
+			width: 0%;
+			animation: nodejs 2s linear 1.8s;
+			animation-play-state: paused;
+		}
+			@keyframes nodejs{
+				0%{width: 0%;}
+				100%{width: 70%;}
+			}
+		#sec-about-us .skill .s7{
+			width: 0%;
+			animation: php 2s linear 2.1s;
+			animation-play-state: paused;
+		}
+			@keyframes php{
+				0%{width: 0%;}
+				100%{width: 55%;}
+			}
+		#sec-about-us .skill .s8{
+			width: 0%;
+			animation: mysql 2s linear 2.4s;
+			animation-play-state: paused;
+		}
+			@keyframes mysql{
+				0%{width: 0%;}
+				100%{width: 65%;}
+			}
+		#sec-about-us .skill .s9{
+			width: 0%;
+			animation: laravel 2s linear 2.7s;
+			animation-play-state: paused;
+		}
+			@keyframes laravel{
+				0%{width: 0%;}
+				100%{width: 40%;}
+			}
+		#sec-about-us .skill .s10{
+			width: 0%;
+			animation: symfony 2s linear 3s;
+			animation-play-state: paused;
+		}
+			@keyframes symfony{
+				0%{width: 0%;}
+				100%{width: 30%;}
+			}
+		#sec-about-us .skill .s11{
+			width: 0%;
+			animation: wordpress 2s linear 3.3s;
+			animation-play-state: paused;
+		}
+			@keyframes wordpress{
+				0%{width: 0%;}
+				100%{width: 80%;}
+			}
+	#sec-about-us .name{
+		padding: 6px 0;
+		color: white;
+		background-color: #04C2C9;
+		width: 90px;
+		text-align: center;
+	}
+	#sec-about-us .bar{
+		width: calc(100% - 90px);
+		background: #eee;
+		padding-right: 10px;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#sec-about-us .fill{
+		height: 100%;
+		background: #00A1A7;
+		animation-fill-mode: forwards !important;
+	}
+	.bar span{
+		color: black;
+	}
+
+/* Projects - Section */
+	#sec-projects{
+		width: 100%;
+		background: #415161;
+	}
+	#sec-projects .projects-container{
+		text-align: center;
+		color: #fff;
+	}
+	#sec-projects .projects-container h1{
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 2.4rem;
+		padding-bottom: 10px;
+		margin-top: 2.4rem;
+	}
+
+/* Services - Section */ 
+	#sec-services{
+		width: 100%;
+		background: #753232;
+	}	
+	#sec-services .services{
+		text-align: center;
+		color: #fff;
+	}
+	#sec-services .services h1{
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 2.4rem;
+		padding-bottom: 10px;
+		margin-top: 2.4rem;
+	}
+	#sec-services .services-container{
+		max-width: 1400px;
+		margin: auto;
+		overflow: hidden;
+		padding: 20px;
+	}
+	#sec-services .service{
+		display: inline-block;
+		width: calc(100% / 3);
+		margin: 0 -2px;
+		padding: 20px;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+	#sec-services .service:hover{
+		outline: 4px solid #461e1e;
+		background: ;
+	}
+	#sec-services .service i{
+		color: #000;
+		font-size: 34px;
+		margin-bottom: 30px;
+	}
+	#sec-services .service h2{
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 500;
+		margin: 0;
+	}
+	#sec-services .service p{
+		color: white;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	@media screen and (max-width: 800px) {
+		#sec-services .service{
+			width: 50%;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		#sec-services .service{
+			width: 100%;
+		}
+	}
+
+
+
+	/* Prices Plans - Colors */ 
+		/* 
+			Morado rgba(63,28,102, 1) / #3F1C66
+			Rosa rgba(230,52,153, 1)
+			Azul rgba(42,44,200, 1)
+		*/
+
+/* Contact - Section */
+	#sec-contact{
+		width: 100%;
+		background-color: #647C64;
+		background-image: url(../img/contact.png);
+		background-position: bottom right;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#sec-contact .fp-tableCell{
+		vertical-align: middle;
+	}
+	#sec-contact .contact-container{
+		margin: 0 auto;
+		max-width: 1400px;
+		width: 100%;
+	}
+	#sec-contact .sec-title{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 2.4rem;
+		padding-bottom: 10px;
+		margin-top: 2.4rem;
+	}
+	#sec-contact .contact-form{
+		margin-top: 2rem;
+	}
+	#sec-contact .contact-form h4{
+		color: #e7a23c;
+		font-weight: bold;
+		font-size: 1.2rem;
+		margin-bottom: .8rem;
+		margin-left: 5vh;
+	}
+	#sec-contact .contact-form-container{
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+	#sec-contact .contact-form-container p{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 0 5vh;
+		padding: .25rem 0;
+	}
+	#sec-contact .contact-form-container input[type="text"],
+	#sec-contact .contact-form-container textarea
+	{
+		display: block;
+		margin: 0;
+		text-align: center;
+		width: 40%;
+		border-radius: 0px 10px 0px 10px;
+		background-color: #323E32;
+		border: none;
+		outline: none;
+		color: white;
+	}
+	#sec-contact .contact-form-container input[type="text"]{
+		height: 2.2rem;
+		line-height: 1.7rem;
+		font-size: 0.8rem;
+		transition: 1s all;
+	}
+	#sec-contact .contact-form-container textarea{
+		line-height: 1.7rem;
+		font-size: 0.9rem;
+		text-align-last: center;
+		resize: none;
+		transition: 1s all;
+	}
+	#sec-contact .contact-form-container input[type="submit"]{
+		display: block;
+		margin: 0;
+		width: 30%;
+		max-width: 100px;
+		background: transparent;
+		border-radius: 100px;
+		padding: 7px 20px;
+		color: white;
+		border: none;
+		border: 2px solid #323e32;
+		text-transform: uppercase;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	#sec-contact .contact-form-container input[type="submit"]:hover{
+		background: #323e32;
+	}
+
+	#sec-contact .contact-form-container input[type="text"]:focus,
+	#sec-contact .contact-form-container textarea:focus
+	{
+		outline: none !important;
+
+	}
+	#sec-contact .contact-form-container input[type="text"]:focus{
+		width: 50%;
+	}
+	#sec-contact .contact-form-container textarea:focus{
+		width: 45%;
+	}
+
+
+/* Media Queries */
+
+	/* General */
+		@media only screen
+			and (min-width: 700px)
+			and (max-width: 900px)
+			and (orientation: landscape){
+				#sec-contact .contact-form h4{
+					margin-top: 2rem;
+				}
+			}
+		@media only screen and (max-width: 750px){
+
+		/* Scrollbar */
+			::-webkit-scrollbar {
+				display: none;
+			}
+
+		/* Main Section - Header */
+			#sec-index{
+				background-image: url(../img/desktop_01-mobile.jpeg);
+				background-size: cover;
+				background-color: #333;
+			}
+			#sec-index .index-container .index-title{
+				font-size: 2.1rem;
+			}
+
+		/* About Me - Section */
+			#sec-about-us .about-section-col{
+				flex: 100%;
+				margin: 10px 0;
+			}
+			#sec-about-us .about,.skills{
+				padding: 0 20px;
+			}
+			#sec-about-us .about{
+				text-align: center;
+			}
+			#sec-about-us .about img{
+				width: 70%;
+			}
+
+		/* Navigation Menu */
+			.nav-mobile{
+				display: flex;
+				background: rgb(0, 0, 0);
+				justify-content: space-between;
+				width: 100%;
+				position: fixed;
+				z-index: 2;
+			}
+			.nav-mobile a{
+				padding: 0.188rem 0;
+				cursor: pointer;
+			}
+			.nav-mobile .logo{
+				margin-left: 10px;
+			}
+			.nav-mobile .logo img{
+				border: 0;
+				position: absolute;
+				width: 24px;
+				margin-top: 2.22px;
+			}
+			.nav-mobile .hamburguer{
+				margin-right: 10px;
+			}
+			.nav-mobile a i{
+				color: white;
+				font-size: 2rem;
+				cursor: pointer;
+			}
+			.navbar{
+				display: none;
+				width: 100%;
+				height: 100%;
+				min-height: 100vh;
+				position: absolute;
+				z-index: 9999999;
+				background-color: rgba(0, 0, 0);
+			}
+			.nav-display{
+				display: block;
+				position: fixed;
+				overflow: hidden;
+				transition: 4s all;
+			}
+			#navbar .nav-items{
+				margin-top: -2.3rem;
+				background-color: black;
+				width: 100%;
+				height: 100%;
+				min-height: 240px;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				justify-content: center;
+				font-size: 1.5rem;
+			}
+			#navbar .nav-items .close{
+				display: block;
+				position: absolute;
+				top: 2.3rem;
+				right: 0;
+			}
+			#navbar .nav-items .close i{
+				font-size: 3rem;
+			}
+			#navbar .nav-items .close a{
+				cursor: pointer;
+			}
+
+			/* Line Animation */
+			#navbar .nav-items li a .line{
+				position: relative;
+  				cursor: pointer;
+			}
+			#navbar .nav-items li a .line:before, #navbar .nav-items li a .line:after{
+				content: '';
+				position: absolute;
+				width: 0%;
+				height: 3px;
+				top: 50%;
+				margin-top: -0.5px;
+				background: orange;
+			}
+			#navbar .nav-items li a .line:before {
+				left: -2.5px;
+			}
+			#navbar .nav-items li a .line:after {
+				right: 2.5px;
+				background: orange;
+				transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+			}
+			#navbar .nav-items li a .line:hover:before {
+				background: orange;
+				width: 100%;
+				transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			}
+			#navbar .nav-items li a .line:hover:after {
+				background: orange;
+				width: 100%;
+				transition: 0s;
+			}
+			#navbar .nav-items li.active a{
+				background-color: transparent;
+				border-bottom: none;
+			}
+			#navbar .nav-items li.active a .line:after{
+				background: orange;
+				width: 100%;
+			}
+			#navbar .nav-items li a:hover{
+				background: transparent;
+			}
+
+		/* Contact - Section */
+			#sec-contact{
+				width: 100%;
+				background-color: #647C64;
+				background-image: url(../img/contact.png);
+				background-position: bottom right;
+				background-size: auto 300px;
+				background-repeat: no-repeat;
+			}
+			#sec-contact .fp-tableCell{
+				vertical-align: top;
+			}
+			#sec-contact .contact-form{
+				margin-top: 10px;
+			}
+			#sec-contact .contact-container{
+				margin-top: .3rem;
+			}
+			#sec-contact .contact-form h4{
+				margin-left: 0;
+				text-align: center;
+			}
+			#sec-contact .sec-title{
+				text-align: center;
+				font-weight: bold;
+				font-size: 2.6rem;
+				padding-bottom: 0;
+				margin-bottom: 5px;
+			}
+			#sec-contact .contact-form-container{
+				display: flex;
+				flex-flow: column wrap;
+
+			}
+			#sec-contact .contact-form-container p{
+				width: 85%;
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+				padding: .25rem 0;
+			}
+			#sec-contact .contact-form-container input[type="text"],
+			#sec-contact .contact-form-container textarea
+			{
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				width: 80%;
+				padding: 2px 0;
+				border-radius: 0px 10px 0px 10px;
+				background-color: #323E32;
+				border: none;
+				outline: none;
+				color: white;
+			}
+			#sec-contact .contact-form-container input[type="text"]{
+				height: 2.2rem;
+				line-height: 1.7rem;
+				font-size: 0.8rem;
+				transition: 1s all;
+			}
+			#sec-contact .contact-form-container textarea{
+				line-height: 1.7rem;
+				font-size: 0.9rem;
+				text-align-last: center;
+				resize: none;
+				transition: 1s all;
+			}
+			#sec-contact .contact-form-container input[type="submit"]{
+				display: block;
+				margin: 0 auto;
+				width: 30%;
+				background: transparent;
+				border-radius: 100px;
+				padding: 7px 20px;
+				color: white;
+				border: none;
+				border: 2px solid #323e32;
+				text-transform: uppercase;
+				font-weight: bold;
+				cursor: pointer;
+			}
+			#sec-contact .contact-form-container input[type="submit"]:hover{
+				background: #323e32;
+			}
+			#sec-contact .contact-form-container input:focus,
+			#sec-contact .contact-form-container textarea:focus
+			{
+				outline: none !important;
+
+			}
+			#sec-contact .contact-form-container input[type="text"]:focus{
+				width: 90%;
+			}
+			#sec-contact .contact-form-container textarea:focus{
+				width: 80%;
+			}		
+		}
+	
+	/* Iphone 6, 7, 8 */
+		/* Portrait */
+		@media only screen 
+			and (min-device-width : 375px) 
+			and (max-device-width : 667px) 
+			and (orientation : portrait){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01-mobile.jpeg);
+					background-size: auto 667px;
+					background-color: #333;
+				}
+				/* Contact - Section */
+				#sec-contact{
+				background-size: auto 160px;
+				}
+			}
+		/* Landscape */
+		@media only screen 
+			and (min-device-width : 375px) 
+			and (max-device-width : 667px) 
+			and (orientation : landscape){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01.jpeg);
+					background-size: 667px 375px;
+					background-color: #333;
+				}
+			}
+
+	/* Iphone 6+, 7+, 8+ PLUS */
+		/* Portrait */
+		@media only screen 
+			and (min-device-width : 414px) 
+			and (max-device-width : 736px) 
+			and (orientation : portrait){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01-mobile.jpeg);
+					background-size: auto 736px;
+					background-color: #333;
+				}
+				/* Contact - Section */
+				#sec-contact{
+					background-size: auto 240px;
+				}
+			}
+		/* Landscape */
+		@media only screen 
+			and (min-device-width : 414px) 
+			and (max-device-width : 736px) 
+			and (orientation : landscape){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01.jpeg);
+					background-size: 736px 414px;
+					background-color: #333;
+				}
+			}
+
+	/* iPhone X */
+		/* Portrait */
+		@media only screen 
+			and (min-device-width : 375px) 
+			and (max-device-width : 812px)
+			and (orientation: portrait)
+			and (-webkit-device-pixel-ratio : 3){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01-mobile.jpeg);
+					background-size: auto 812px;
+					background-color: #333;
+				}
+				/* Contact - Section */
+				#sec-contact{
+					background-size: auto 300px;
+				}
+		}
+		/* Landscape */
+		@media only screen 
+			and (min-device-width : 375px) 
+			and (max-device-width : 812px)
+			and (orientation: landscape)
+			and (-webkit-device-pixel-ratio : 3){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01.jpg);
+					background-size: 812px 375px;
+					background-attachment: scroll;
+					background-color: #333;
+				}
+		}
+
+	/* iPhone XR */
+		/* Portrait */
+		@media only screen 
+			and (min-device-width : 414px) 
+			and (max-device-width : 896px)
+			and (orientation: portrait)
+			and (-webkit-device-pixel-ratio : 2){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01-mobile.jpeg);
+					background-size: auto 896px;
+					background-color: #333;
+				}
+				/* Contact - Section */
+				#sec-contact{
+					background-size: auto 300px;
+				}
+		}
+		/* Landscape */
+		@media only screen 
+			and (min-device-width : 414px) 
+			and (max-device-width : 896px)
+			and (orientation: landscape)
+			and (-webkit-device-pixel-ratio : 2){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01.jpg);
+					background-size: 896px 414px;
+					background-attachment: scroll;
+					background-color: #333;
+				}
+		}
+	
+	/* iPhone XS */
+		/* Portrait */
+		@media only screen 
+			and (min-device-width : 375px) 
+			and (max-device-width : 812px)
+			and (orientation: portrait)
+			and (-webkit-device-pixel-ratio : 3){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01-mobile.jpeg);
+					background-size: auto 812px;
+					background-color: #333;
+				}
+				/* Contact - Section */
+				#sec-contact{
+					background-size: auto 300px;
+				}
+		}
+		/* Landscape */
+		@media only screen 
+			and (min-device-width : 375px) 
+			and (max-device-width : 812px)
+			and (orientation: landscape)
+			and (-webkit-device-pixel-ratio : 2){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01.jpg);
+					background-size: 812px 375px;
+					background-attachment: scroll;
+					background-color: #333;
+				}
+		}
+
+	/* iPhone XS Max */
+		/* Portrait */
+		@media only screen 
+			and (min-device-width : 414px) 
+			and (max-device-width : 896px)
+			and (orientation: portrait)
+			and (-webkit-device-pixel-ratio : 3){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01-mobile.jpeg);
+					background-size: auto 896px;
+					background-color: #333;
+				}
+				/* Contact - Section */
+				#sec-contact{
+					background-size: auto 315px;
+				}
+		}
+		/* Landscape */
+		@media only screen 
+			and (min-device-width : 414px) 
+			and (max-device-width : 896px)
+			and (orientation: landscape)
+			and (-webkit-device-pixel-ratio : 2){
+				/* Main Section - Header */
+				#sec-index{
+					background-image: url(../img/desktop_01.jpg);
+					background-size: 896px 414px;
+					background-attachment: scroll;
+					background-color: #333;
+				}
+		}
+
+
+
+
